@@ -13,7 +13,7 @@ a {
    display: flex;
    justify-content: space-around;
    align-items: center;
-   background-color: #C5BFC4;
+   background-color: #9a8478;
 }
 
 .logo {
@@ -26,7 +26,114 @@ a {
     gap: 20px;
 }
 
+.li.active{
+    background-color: #9a8478;
+    padding: 3px;
+    text-decoration: none;
+    transition: all .5s;
+    margin-left: 15px;
+    border-radius: 8px;
+  }
+  
+.li:focus, li:hover, li:active{
+    background-color: #9a8478;
+    padding: 3px;
+    text-decoration: none;
+    transition: all .5s;
+    margin-left: 15px;
+    border-radius: 8px;
+  }
+
 .a-nav {
     font-family: 'Barlow', sans-serif;
     font-weight: 900;
+    color: white;
 }
+
+.section-inicio {
+    margin-top: 100px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 60vh;
+}
+
+.titulo {
+    font-family: 'Mulish', sans-serif;
+    font-size: 3.5em;
+
+}
+
+.descripcion {
+    font-family: 'Mulish', cursive;
+    font-size: medium;
+}
+
+.container-inicio {
+    width: 70%;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.5em;
+}
+
+#boton{
+    width: 12%;
+    height: 40px;
+    background-color: beige;
+    font-family:'Mukta', cursive;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 700;
+    border-radius: 12px;
+    border-style: none;
+    margin-top: 30px; 
+    justify-content: center;
+    margin-right: 20px;
+}
+
+#boton:hover { 
+    background: #9a8478; 
+    color: white; 
+  } 
+  
+#boton:active { 
+    background: gray; 
+    color: white; 
+  } 
+
+#boton2{
+    width: 12%;
+    height: 40px;
+    background-color: beige;
+    font-family:'Mukta', cursive;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 700;
+    border-radius: 12px;
+    border-style: none;
+    margin-top: 30px; 
+    justify-content: center;
+}
+
+#boton2:hover { 
+    background: #9a8478; 
+    color: white; 
+  } 
+  
+#boton2:active { 
+    background: #9a8478; 
+    color: white; 
+  } 
+
+body {
+    height: 400px;
+    background-image: url(./Fondo\ de\ comida.png);
+    background-size: cover;
+
+    
+}
+
+
+
