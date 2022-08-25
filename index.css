@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -51,25 +52,16 @@ a {
 }
 
 .section-inicio {
-    margin-top: 100px;
-    width: 100%;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    height: 60vh;
-}
+    height: 100vh;
+    background-image: url(./Fondo\ de\ comida.png);
+    background-size: cover;
 
-.titulo {
-    font-family: 'Mulish', sans-serif;
-    font-size: 3.5em;
-
-}
-
-.descripcion {
-    font-family: 'Mulish', cursive;
-    font-size: medium;
 }
 
 .container-inicio {
@@ -78,19 +70,36 @@ a {
     font-size: 1.5em;
 }
 
+.titulo {
+    font-family: 'Questrial';
+    font-size: 3.5em;
+    color: white;
+
+}
+
+.descripcion {
+    font-family: 'Questrial';
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
 #boton{
     width: 12%;
     height: 40px;
     background-color: beige;
     font-family:'Mukta', cursive;
     color: black;
-    font-size: 1.1em;
+    font-size: 1.0em;
     font-weight: 700;
     border-radius: 12px;
     border-style: none;
     margin-top: 30px; 
     justify-content: center;
     margin-right: 20px;
+    min-width: 120px;
 }
 
 #boton:hover { 
@@ -109,12 +118,13 @@ a {
     background-color: beige;
     font-family:'Mukta', cursive;
     color: black;
-    font-size: 1.1em;
+    font-size: 1.0em;
     font-weight: 700;
     border-radius: 12px;
     border-style: none;
     margin-top: 30px; 
     justify-content: center;
+    min-width: 120px;
 }
 
 #boton2:hover { 
@@ -129,11 +139,199 @@ a {
 
 body {
     height: 400px;
-    background-image: url(./Fondo\ de\ comida.png);
-    background-size: cover;
+    background-size: cover; 
+}
 
+.sectioninfo {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 60vh
+
+}
+
+.texto {
+    font-family: 'Questrial';
+}
+
+.container-sectioninfo {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--bg-overlay-color);
+}
+
+.titulo-section-info {
+    font-family: 'Questrial';
+    font-size: 1.8em;
+    padding-top: 10px;
+}
+
+.parrafo-section-info {
+    font-family: 'Questrial';
+    font-size: 1.1em;
+}
+
+.parrafo-familia {
+    margin-top: 20px;
+    font-family: 'Questrial';
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.parrafo-amigos {
+    margin-top: 20px;
+    font-family:'Questrial';
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+.parrafo-pareja {
+    margin-top: 20px;
+    font-family: 'Questrial';
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+
+.conteiner-elementos {
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
+
+.comida-amigos {
+    width: 300px;
+    height: 300px;
+    border-radius: 1.0em;
+    transition: 0.2s;
+
+}
+
+.comida-amigos:hover {
+    transform: scale(1.1);
+  }
+
+.comida-familia {
+    width: 300px;
+    height: 300px;
+    border-radius: 1.0em;
+    transition: 0.2s;
+
+}
+
+.comida-familia:hover {
+    transform: scale(1.1);
+  }
+
+.comida-pareja {
+    width: 300px;
+    height: 300px;
+    border-radius: 1.0em;
+    transition: 0.2s; 
+
+}
+
+.comida-pareja:hover {
+    transform: scale(1.1);
+  }
+
+.pie-pagina {
+    width: 100%;
+    background-color: #9a8478;
+}
+
+footer {
+    height: 200px;
+    background-image: url(./maderita.png);
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding-top: 20px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff
+}
+
+.pie-pagina .grupo-1 .h2 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: white;
+}
+
+.info {
+    color: white;
+    font-family: 'Questrial';
+}
+
+
+.pie-pagina .grupo-1 .box p {
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Questrial';
+
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: black;
+}
+
+
+.pie-pagina .grupo-1 .box .seguinos{
+    margin-left: 30px;
+    color: #fff;
+    font-family: 'Questrial';
+}
+
+
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+
+
 
 
 
